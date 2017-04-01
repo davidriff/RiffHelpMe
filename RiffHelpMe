@@ -1,4 +1,4 @@
 #!/bin/bash
 
-cat ./banner.txt
+cat /etc/RiffHelpMe/banner.txt
 
