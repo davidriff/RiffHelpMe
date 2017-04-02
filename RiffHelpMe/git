@@ -1,7 +1,23 @@
-git config --global user.name "YOUR NAME"
-git config --global user.email "EMAIL ADDRESS"
+Git
+===
 
-git clone [project URL]
-git add .
-git commit -m "comment here"
-git push origin master
+Git is a version control system (VCS) for tracking changes in computer files and coordinating work on those files among multiple people. It is primarily used for software development, but it can be used to keep track of changes in any files.
+
+
+Configuration:
+--------------
+	- username: git config --global user.name "YOUR NAME"
+	- email: git config --global user.email "EMAIL ADDRESS"
+
+
+Usual:
+------
+
+	- Get project from repository: git clone [project URL]
+	- Update project from repository: git pull
+
+	- Save your password in cache for 15 mins: git config --global credential.helper cache
+
+	- Propose changes: git add *
+	- Commit the changes: git commit -m "comment here"
+	- Upload to remote repository: git push origin master
