@@ -21,22 +21,22 @@ echo ""
 
 if [ $choice == "1" ]; then
 
-	vim -R /etc/RiffHelpMe/Markdown
+	vim -R /opt/RiffHelpMe/Markdown
 
 elif [ $choice == "2" ]; then
 
-	vim -R /etc/RiffHelpMe/Vim
+	vim -R /opt/RiffHelpMe/Vim
 
 elif [ $choice == "3" ]; then
 
-	vim -R /etc/RiffHelpMe/Tmux
+	vim -R /opt/RiffHelpMe/Tmux
 
 elif [ $choice == "4" ]; then
 
-	vim -R /etc/RiffHelpMe/Nmap
+	vim -R /opt/RiffHelpMe/Nmap
 
 elif [ $choice == "5" ]; then
 
-	vim -R /etc/RiffHelpMe/git
+	vim -R /opt/RiffHelpMe/git
 
 fi

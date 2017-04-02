@@ -6,8 +6,8 @@ This script gives several shortcuts and help for different programs, such as Vim
 
 ```
 git clone https://github.com/davidriff/RiffHelpMe
-sudo cp ./RiffHelpMe/RiffHelpMe.sh /usr/bin/RiffHelpMe
-sudo cp -ar ./RiffHelpMe/RiffHelpMe/ /etc/
+sudo cp ./RiffHelpMe/RiffHelpMe.sh /usr/local/bin/RiffHelpMe
+sudo cp -ar ./RiffHelpMe/RiffHelpMe/ /opt/
 ```
 
 ### Use
