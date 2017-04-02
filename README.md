@@ -6,7 +6,7 @@ This script gives several shortcuts and help for several programs, such as Vim, 
 
 ```
 git clone https://github.com/davidriff/RiffHelpMe
-sudo cp ./RiffHelpMe/RiffHelpMe.sh /usr/bin/
+sudo cp ./RiffHelpMe/RiffHelpMe.sh /usr/bin/RiffHelpMe
 sudo cp -ar ./RiffHelpMe/RiffHelpMe/ /etc/
 ```
 
