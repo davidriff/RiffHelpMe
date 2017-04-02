@@ -21,3 +21,9 @@ Usual:
 	- Propose changes: git add *
 	- Commit the changes: git commit -m "comment here"
 	- Upload to remote repository: git push origin master
+
+
+
+==============================================================
+Exit this manual -> Press "Esc" -> Type ":q!" -> press "Enter"
+==============================================================

@@ -7,6 +7,8 @@ echo ""
 echo "[1] Help me with MarkDown"
 echo "[2] Help me with Vim and its plugins"
 echo "[3] Help me with Tmux"
+echo "[4] Help me with Nmap"
+echo "[5] Help me with git"
 
 read choice
 
@@ -23,10 +25,18 @@ if [ $choice == "1" ]; then
 
 elif ($choice == "2"); then
 
-	cat /etc/RiffHelpMe/Vim
+	vim -R /etc/RiffHelpMe/Vim
 
 elif ($choice == "3"); then
 
-	cat /etc/RiffHelpMe/Tmux
+	vim -R /etc/RiffHelpMe/Tmux
+
+elif ($choice == "4"); then
+
+	vim -R /etc/RiffHelpMe/nmap
+
+elif ($choice == "5"); then
+
+	vim -R /etc/RiffHelpMe/git
 
 fi
