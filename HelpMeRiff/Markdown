@@ -1,0 +1,56 @@
+Markdown
+========
+
+Markdown is a lightweight markup language with plain text formatting syntax. It's designed so that it can be converted to HTML and many other formats using a tool by the same name.
+
+---------------------
+
+Sintaxis
+
+- Headers: Type #Title# you can also use more # for smaller headers (up to 6 # in each side)
+
+- Separator: Type ---
+
+- New paragraph: Type *Intro* twice.
+
+- Emphasis: 
+	- *Italic*
+	- **bold**
+	- ***Bold & Italic***
+
+- Links: 
+	- Replace link with word: [Github](http://github.com)
+	- Full link: <http://github.com>
+
+- Quotes: Type > before te quote
+
+- Code:
+
+	- Line: Type your code `here`
+	- Bloc: Type your code with your program tag (eg: python) ```python     code```
+	
+
+- Lists:
+
+	Unordered:
+		- Item1
+		- Item2
+		- Item3
+
+
+- Tables:
+
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
+
+
+- **Images**:
+	- Local image: ![Title](/path/to/image)
+	- URL: ![Title](URL)
+
+
+
+

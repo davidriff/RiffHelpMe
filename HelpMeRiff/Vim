@@ -1,0 +1,137 @@
+Vim
+===
+
+Vim is a highly configurable text editor built to make creating and changing any kind of text very efficient. It is included as "vi" with most UNIX systems and with Apple OS X. 
+
+
+
+Modes:
+======
+
+- Normal: When you enter vim, you are by default in the "Normal" mode, here you can copy lines and enter into other modes
+
+- Insert: In this mode you can modify the content of your file. You can enter it by pressing i.
+
+- Command: You can access this mode by pressing "Esc" and then ":". In this mode you can search and replace expressions, save, exit vim, change session parameters...
+
+- Visual: You can enter this mode pressing "v" from normal mode, once in it you can select text but not modify it.
+
+- Select: From visual mode, press "Ctrl-G", now you can select and replace text
+
+- Ex: Enter this mode from Normal mode, by pressing Q. Here you can execute several vim commands without exiting back to Normal mode every time.
+
+
+
+Talking vim:
+============
+
+- Verbs: 
+	v(visual/select)
+	c (change)
+	d (delete)
+	y (yank/copy)
+
+- Modifiers: 
+	i (inside)
+	a (around)
+	t (until you find the character)
+	f (find until you get the character including it)
+	/ (search)
+
+- Objects:
+	w (word)
+	s (sentence)
+	p (paragraph)
+	b (block/parenthesis)
+	t (tag)
+
+- Examples:
+	diw: delete inside word -> delete the word where the cursor is
+	cis: change inside sentence
+	ci": change inside quote -> changes what is inside the quotes
+	c/foo: change everything until word "foo" 
+	ctX: change everything until letter X
+	vap: select the paragraph where the cursor is
+
+
+
+
+
+Shortcurt keys (in normal mode):
+================================
+
+In Normal mode:
+---------------
+
+	- Undo: Press "u"
+
+	- Redo: Press "Ctrl-R"
+
+	- Go to first line of doc: Press "gg"
+
+	- Go to last line of doc: Press "G"
+
+	- Go to beginin of line: Press "0"
+
+	- Go to the end of line: Press "$"
+
+	- Go to the end of the next word: Press "e" (does not skip punctuation marks) or press "E" (skips punctuation marks)
+
+	- Go to the beginning of next word: Press "w" (does not skip punctuation marks) or "W" (skips punctuation marks) 
+
+	- Same for beginning of last word: "b" and "B"
+
+
+
+In visual mode:
+---------------
+
+	- Indente - Dedent: Select text and press ">" or "<"
+
+	- Capital letter or regular letter: Select text and press "u" or "U"
+
+
+In Ex mode (vim commands):
+--------------------------
+Go to normal mode, type ":" and then the following commands
+
+	- Replace: ":%s/hello/goodbye" -> this replace hello by goodbye in all the document
+
+	- Shell command: ":!ls -la" -> this executes shell commands and re-enters vim after execution
+
+	
+
+Panels and tabs:
+=================
+In Normal mode
+
+	- Divide horizontal panel: ":sp" + " name of the new file"
+
+	- Divide vertical panel: ":vsp" + " name of the new file"
+
+	- Move through panels: "Ctrl-w" + arrow keys
+
+	- Close panel: "Ctrl-c" and then "c" again
+
+	- New tab: ":tabnew"
+
+	- Move through tabs: "gt"
+
+	- Close active tab: ":tabc"
+
+
+
+NERDTree Plugin:
+================
+
+	- in normal mode ":NERDTree"
+
+	- Create/Delete/Move file/directory: In NERDTree panel, type "m" and then use the menu, if you want to create a directory, type the name with a "/"
+
+	- NERDTree acts like a regular panel, so you can move to it with "Ctrl-w" + arrow keys    or    "Ctrl-w" + "w"
+
+	- Find more shortcurts by typing "?" in NERDTree tab
+
+
+
+
