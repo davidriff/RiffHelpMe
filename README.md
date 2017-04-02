@@ -1,6 +1,6 @@
 # RiffHelpMe
 
-This script gives several shortcuts and help for several programs, such as Vim, git, nmap, Tmux...
+This script gives several shortcuts and help for different programs, such as Vim, git, nmap, Tmux...
 
 ### Installing
 
@@ -12,4 +12,4 @@ sudo cp -ar ./RiffHelpMe/RiffHelpMe/ /etc/
 
 ### Use
 
-Open terminal and type: RiffHelpMe
+Open terminal and type: ```RiffHelpMe```
