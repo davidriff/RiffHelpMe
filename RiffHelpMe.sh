@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cat /etc/RiffHelpMe/banner
+cat /opt/RiffHelpMe/banner
 
 echo "What do you need ?"
 echo ""
