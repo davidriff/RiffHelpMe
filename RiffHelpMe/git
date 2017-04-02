@@ -1,0 +1,7 @@
+git config --global user.name "YOUR NAME"
+git config --global user.email "EMAIL ADDRESS"
+
+git clone [project URL]
+git add .
+git commit -m "comment here"
+git push origin master
