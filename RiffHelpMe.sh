@@ -23,19 +23,19 @@ if [ $choice == "1" ]; then
 
 	vim -R /etc/RiffHelpMe/Markdown
 
-elif ($choice == "2"); then
+elif [ choice == "2" ]; then
 
 	vim -R /etc/RiffHelpMe/Vim
 
-elif ($choice == "3"); then
+elif [ $choice == "3" ]; then
 
 	vim -R /etc/RiffHelpMe/Tmux
 
-elif ($choice == "4"); then
+elif [ $choice == "4" ]; then
 
 	vim -R /etc/RiffHelpMe/nmap
 
-elif ($choice == "5"); then
+elif [ $choice == "5" ]; then
 
 	vim -R /etc/RiffHelpMe/git
 
