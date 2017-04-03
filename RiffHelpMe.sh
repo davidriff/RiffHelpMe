@@ -2,7 +2,7 @@
 # Title: RiffHelpMe
 # Description: shortcuts and help for different programs
 # Author: David Riff (@Monsieur_Riff)
-# Version: 0.5.1
+# Version: 0.5.3
 # Last Modified: jbono @ 201703403
 
 function banner() {
@@ -15,20 +15,16 @@ function menu() {
 	echo "What do you need ?"
 	echo ""
 
-	files=$(ls -C1 /opt/RiffHelpMe/)
 	count=1
-	for i in $files
-	do
+	for i in $(ls -C1 /opt/RiffHelpMe/); do
 		echo "["$count"]""Help me with "$i
 		count=$((count+1))
 	done
 	
-
 	read choice
 
 	count=1
-	for i in $files
-	do
+	for i in $(ls -C1 /opt/RiffHelpMe/); do
 		if [ $count == $choice ]; then
 			vim -R /opt/RiffHelpMe/$i
 		fi
@@ -37,11 +33,9 @@ function menu() {
 
 }
 
-
 function main(){
   banner
   menu
 }
  
 main
-
