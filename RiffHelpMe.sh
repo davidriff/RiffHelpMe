@@ -2,7 +2,7 @@
 # Title: RiffHelpMe
 # Description: shortcuts and help for different programs
 # Author: David Riff (@Monsieur_Riff)
-# Version: 0.5.0
+# Version: 0.5.1
 # Last Modified: jbono @ 201703403
 
 function banner() {
@@ -19,6 +19,8 @@ function menu() {
 	echo "[3] Help me with Tmux"
 	echo "[4] Help me with Nmap"
 	echo "[5] Help me with git"
+	
+	read choice
 }
 
 function parseopt() {
