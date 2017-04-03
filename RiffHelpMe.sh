@@ -18,25 +18,23 @@ echo "=============See you next time=============="
 echo "============================================"
 echo ""
 
-
-if [ $choice == "1" ]; then
-
-	vim -R /opt/RiffHelpMe/Markdown
-
-elif [ $choice == "2" ]; then
-
-	vim -R /opt/RiffHelpMe/Vim
-
-elif [ $choice == "3" ]; then
-
-	vim -R /opt/RiffHelpMe/Tmux
-
-elif [ $choice == "4" ]; then
-
-	vim -R /opt/RiffHelpMe/Nmap
-
-elif [ $choice == "5" ]; then
-
-	vim -R /opt/RiffHelpMe/git
-
-fi
+case $choice in
+	1) 
+		vim -R /opt/RiffHelpMe/Markdown
+		;;
+	2)
+		vim -R /opt/RiffHelpMe/Vim
+		;;
+	3)
+		vim -R /opt/RiffHelpMe/Tmux
+		;;
+	4)
+		vim -R /opt/RiffHelpMe/Nmap
+		;;	
+	5)
+		vim -R /opt/RiffHelpMe/git
+		;;
+	*) 
+		echo "Invalid Option"
+		;;
+esac	
