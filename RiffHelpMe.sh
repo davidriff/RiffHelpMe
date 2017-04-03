@@ -12,50 +12,36 @@ function banner() {
 }
 
 function menu() {
+
 	echo "What do you need ?"
 	echo ""
-	echo "[1] Help me with MarkDown"
-	echo "[2] Help me with Vim and its plugins"
-	echo "[3] Help me with Tmux"
-	echo "[4] Help me with Nmap"
-	echo "[5] Help me with git"
+
+	files=$(ls -C1 /opt/RiffHelpMe/)
+	count=1
+	for i in $files
+	do
+		echo "["$count"]""Help me with "$i
+		count=$((count+1))
+	done
 	
+
 	read choice
+
+	count=1
+	for i in $files
+	do
+		if [ $count == $choice ]; then
+			vim -R /opt/RiffHelpMe/$i
+		fi
+		count=$((count+1))
+	done
+
 }
 
-function parseopt() {
-	case $choice in
-		1) 
-			vim -R /opt/RiffHelpMe/Markdown
-			;;
-		2)
-			vim -R /opt/RiffHelpMe/Vim
-			;;
-		3)
-			vim -R /opt/RiffHelpMe/Tmux
-			;;
-		4)
-			vim -R /opt/RiffHelpMe/Nmap
-			;;	
-		5)
-			vim -R /opt/RiffHelpMe/git
-			;;
-		*) 
-			echo "Invalid Option"
-			echo ""
-			echo "============================================"
-			echo "=============See you next time=============="
-			echo "============================================"
-			echo ""
-			exit 0
-			;;
-	esac	
-}
 
 function main(){
   banner
   menu
-  parseopt
 }
  
 main
