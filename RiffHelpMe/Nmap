@@ -1,9 +1,5 @@
 Nmap (Network Mapper) is a security scanner used to discover hosts and services on a computer network, thus building a "map" of the network. To accomplish its goal, Nmap sends specially crafted packets to the target host(s) and then analyzes the responses.
 
-
-
-
-
 Target selection
 ================
 
@@ -70,4 +66,7 @@ nmap 192.168.1.1 -D 192.168.1.2 192.168.1.3  ->  makes it appear that the host(s
 --badsum  -> sends packets with wrong checksums  
 
 
+==============================================================
+Exit this manual -> Press "Esc" -> Type ":q!" -> press "Enter"
+==============================================================
 
