@@ -1,1 +1,73 @@
-Comming soon.....
+Nmap (Network Mapper) is a security scanner used to discover hosts and services on a computer network, thus building a "map" of the network. To accomplish its goal, Nmap sends specially crafted packets to the target host(s) and then analyzes the responses.
+
+
+
+
+
+Target selection
+================
+
+nmap 192.168.1.1
+nmap 192.168.1.1-50  -> scans from 192.168.1.1 to 192.168.1.50
+nmap 192.168.1.1/24  -> scans a subnet (255.255.255.0 in this case)
+
+Port selection
+==============
+
+nmap -p 22 192.168.1.1
+nmap -p 22-53 192.168.1.1
+nmap -F 192.168.1.1  -> scan 100 most common ports
+nmap -p- 192.168.1.1  -> scan every port (65535 ports)
+
+
+HOST Discovery
+==============
+
+-O  -> OS discovery
+-PR  -> ARP scan
+-PE  -> Ping scan
+-sn  -> don't scan ports
+-Pn  -> Ignore discovery (in case HOST or firewall blocks PING)
+
+Types of port scan
+==================
+
+-sS  -> Default, SYN packet, never completes connection
+-sT  -> TCP with connection
+-sU  -> UDP scan, you can combine it with -sS
+-sN  -> TCP header is 0
+-sF  -> Tcp header is FIN
+-sX  -> TCP headers FIN, PSH and URG
+
+-sV  -> Try to get service version
+
+Options against IDS/IPS
+=======================
+
+-f  -> packet fragmentation
+
+nmap 192.168.1.1 -D 192.168.1.2 192.168.1.3  ->  makes it appear that the host(s) you specify as decoys are scanning the target network too.
+
+-S  -> Spoof IP address, you won't get the response, but you might incriminate another host
+
+-T0 -> Paranoid mode, waits 5 minutes between packets
+-T1 -> Sneaky mode, waits 15 seconds between packets
+-T2 -> Polite mode, 10 times slower than default 
+-T3 -> Default
+-T4 -> Aggressive, assumes a fast and reliable network
+-T5 -> Insane mode, might miss open ports
+
+--spoof-mac  -> MAC spoof
+
+--mtu -> Specify mtu of packet (multiple of 8 needed)
+
+--source-port  -> Specify a source port to avoid firewall
+
+--data length 25 -> adds 25 bytes to every packet
+
+--randomize-hosts  -> Don't scan hosts in order
+
+--badsum  -> sends packets with wrong checksums  
+
+
+
