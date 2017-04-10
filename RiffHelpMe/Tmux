@@ -1,1 +1,57 @@
-Comming soon........
+Tmux
+====
+tmux is a terminal multiplexer
+
+What is a terminal multiplexer? It lets you switch easily between several programs in one terminal, detach them (they keep running in the background) and reattach them to a different terminal. And do a lot more.
+
+
+
+
+start Tmux: Type "tmux" in terminal
+
+Command key
+===========
+By default, you can enter in the command mode by typing Ctrl+b, then you can do all the things that follow
+
+
+Pannels
+=======
+Split pannels into left and right: %
+
+Split pannels into up and down: "
+
+Move through pannels: Ctrl+b and then use key arrows
+
+Make pannel fullscreen: z
+
+Shrink pannel back to previous size: z
+
+Closing pannels: Ctrl+d
+
+
+Windows
+=======
+New window: c
+
+Switch to previous window: p
+
+Switch to next windows: n
+
+Rename current windows: ,
+
+Switch to window number x: Ctrl+b and then type number x
+
+
+Sessions
+========
+Create a session when starting tmux: tmux new -s name_of_session
+
+Detach current session: d
+
+List of tmux running sessions: tmux ls
+
+Connect to tmux session: tmux attach -t 0
+
+Rename session: tmux rename-session -t 0 new_name
+
+
