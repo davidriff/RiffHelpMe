@@ -80,3 +80,6 @@ IMPORTANT FILES AND LOCATIONS
 /proc/meminfo : Memory Usages Information.
 /proc/mount : Mounted File-system Information.
 
+==============================================================
+Exit this manual -> Press "Esc" -> Type ":q!" -> press "Enter"
+==============================================================
