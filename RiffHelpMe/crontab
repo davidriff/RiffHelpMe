@@ -1,0 +1,46 @@
+Crontab
+=======
+
+Crontab is used to schedule commands to be executed periodically.
+
+
+list crontabs: "sudo crontab -l"
+
+edit crontabs: "sudo crontab -e"
+
+
+
+In edit mode:
+=============
+
+***** /usr/local/bin/coucou.py
+
+First *: minute (from 0 to 59)
+Second *: hour (from 0 to 23)
+Third *: day of month (1 to 31)
+Forth *: month (1 to 12)
+Fifth *: day of week (0 to 6) 0=Sunday
+
+
+Special words:
+==============
+
+@reboot Run once, at startup
+@yearly Run once a year
+@monthly
+@weekly
+@daily
+@midnight
+@hourly
+
+
+Examples:
+=========
+
+run "my_script" every friday at 1AM: 01**5 my_script.sh
+
+run "my_script" on workdays 1 AM: 01**1-5 my_script.sh
+
+run "my_script" every 10 minutes: 0,10,20,30,40,50**** my_script.sh
+
+run "my_script" on startUp: @reboot my_script
