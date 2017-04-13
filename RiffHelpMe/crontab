@@ -44,3 +44,7 @@ run "my_script" on workdays 1 AM: 01**1-5 my_script.sh
 run "my_script" every 10 minutes: 0,10,20,30,40,50**** my_script.sh
 
 run "my_script" on startUp: @reboot my_script
+
+==============================================================
+Exit this manual -> Press "Esc" -> Type ":q!" -> press "Enter"
+==============================================================
