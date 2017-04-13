@@ -54,4 +54,6 @@ Connect to tmux session: tmux attach -t 0
 
 Rename session: tmux rename-session -t 0 new_name
 
-
+==============================================================
+Exit this manual -> Press "Esc" -> Type ":q!" -> press "Enter"
+==============================================================
