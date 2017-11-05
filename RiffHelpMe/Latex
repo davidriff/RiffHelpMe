@@ -1,0 +1,117 @@
+Latex
+=====
+
+LaTeX is a markup language to typeset documents. It excels at making math and the overall layout beautiful.
+
+----------------------
+
+\documentclass{article}  %"beamer"(for presentations), "book", "slides"
+
+\usepackage{PACKAGENAME}
+
+
+\title{My first document}
+\date{2013-09-01}
+\author{John Doe}
+
+\begin{document}
+  \pagenumbering{gobble} %gobble=no page number
+  \maketitle
+  \newpage
+
+  \tableofcontents %uses sections and subsections to generate the table
+  %see also \listoffigures and \listoftables
+
+
+  \newpage
+
+  \pagenumbering{arabic} %arabic=arabic page number (there is also roman)
+
+
+  \section{Section 1}
+  \subsection{Subsection 1.1}
+  \subsection{Subsection 1.2}
+
+  \paragraph{Paragraph}
+  \subparagraph{Subparagraph}
+
+%using lists
+------------
+  %unordered
+  \begin{itemize}
+	\item One
+  	\item Two
+  	\item Three
+  \end{itemize}
+
+
+  %ordered
+  \begin{enumerate}
+  	\item One
+  	\item Two
+  	\item Three
+  \end{enumerate}
+
+
+%using hyperlinks
+-----------------
+
+  %make sure you use \usepackage{hyperref} package
+  This is my link: \href{http://www.latex-tutorial.com}{LaTeX-Tutorial}.
+
+
+%using figures
+%-------------
+
+  \begin{figure}
+    \includegraphics[width=\linewidth]{boat.jpg}
+    \caption{A boat.}
+    \label{fig:boat1}
+  \end{figure}
+
+  Figure \ref{fig:boat1} shows a boat.
+
+%using footnotes
+%---------------
+
+  This is some example text\footnote{\label{myfootnote}Hello footnote}.
+
+  I'm referring to footnote \ref{myfootnote}.
+
+
+%using bibliography (we have to create a .bib file before, see down)
+%-------------------------------------------------------------------
+
+  Random citation \cite{DUMMY:1} embeddeed in text.
+
+  \newpage
+
+  \bibliography{/path/to/bib/file} 
+  \bibliographystyle{ieeetr} %there are more styles available
+
+
+\end{document}
+
+
+
+%this is the bib file 
+
+@BOOK{DUMMY:1,
+AUTHOR="John Doe",
+TITLE="The Book without Title",
+PUBLISHER="Dummy Publisher",
+YEAR="2100",
+}
+
+%In Latex you can also create:
+
+	-Tables
+	-Graphics (plotting with pgfplots package)
+	-Draw pictures (with Tikz package)
+	-Highlight source code (with lstlisting package)
+
+
+
+==============================================================
+Exit this manual -> Press "Esc" -> Type ":q!" -> press "Enter"
+==============================================================
