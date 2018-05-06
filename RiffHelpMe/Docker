@@ -1,0 +1,46 @@
+Docker
+======
+
+The Docker platform leverages Docker containers to enable IT operations teams and Developement teams to build, ship and run any application, anywhere.
+
+
+Use:
+===
+
+- Download image from DockerHub:
+	sudo docker pull image-name
+
+- List all images:
+	sudo docker images
+
+- Run an image:
+	sudo docker run image-name
+
+- Run an image and keep attached to its command line:
+	docker run -it image-name /bin/bash
+
+- Run an image in background:
+	sudo doker run -d --name name-of-the-job image-name
+
+- Remove an image:
+	sudo docker rmi image-name
+
+- List running containers:
+	sudo docker ps
+
+- List all containers:
+	sudo docker -a
+
+- Stop a container:
+	sudo docker stop container-ID
+
+- Remove a container:
+	sudo docker rm container-ID
+
+- Save changes to container:
+	sudo docker commit -m "comments" container-ID image-name:label-name
+
+After this last command, a new image is created, we can run it with:
+	sudo docker run -it image-name:label-name
+
+
