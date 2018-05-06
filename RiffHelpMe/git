@@ -16,12 +16,9 @@ Usual:
 	- Get project from repository: git clone [project URL]
 	- Update project from repository: git pull
 
-	- Save your password in cache for 15 mins: git config --global credential.helper cache
-
-	- Propose changes: git add *
-	- Commit the changes: git commit -m "comment here"
-	- Upload to remote repository: git push origin master
-
+	- Check status: git status
+	- Add file to project: git add filename
+	- Commit change: git commit -m "MODIFICATIONS"
 
 
 ==============================================================
